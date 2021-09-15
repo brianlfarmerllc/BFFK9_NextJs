@@ -1,0 +1,71 @@
+// header that goes across top of page
+.main-head {
+  background: #5e36ca;
+  z-index: 2;
+  position: sticky;
+  top: 0;
+}
+
+// nav including logo and menu
+nav {
+  @include flex(space-between, center, row);
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 10vh;
+  // company name and logo
+  .co-name {
+    flex: 2 1 30rem;
+    .logo {
+      @include flex(flex-start, center, row);
+      width: max-content;
+    }
+    img {
+      width: 100%;
+      margin-top: 4rem;
+    }
+    .name {
+      margin-left: 1rem;
+      color: white;
+      font-size: 3.6rem;
+      font-family: "Pacifico", cursive;
+      letter-spacing: 1px;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 3px;
+        height: 3px;
+        border-radius: 25%;
+        background: #04edd2;
+        animation: underline 1.5s ease-in-out forwards, fadeIn 1.5s linear;
+      }
+    }
+  }
+  // menu items
+  .main-nav {
+    @include flex(space-between, center, row);
+    flex: 1 1 30rem;
+    font-family: "Inter", sans-serif;
+  }
+}
+
+// animations
+@keyframes underline {
+  from {
+    right: 100%;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

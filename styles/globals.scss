@@ -1,0 +1,89 @@
+$headerLarge: 6.5rem;
+$headerMedium: 3.6rem;
+$headerSmall: 2.4rem;
+$text: 1.6rem;
+
+$mainPurple: #5e36ca;
+$mainGreen: #2abaa0;
+$whiteColor: #ffffff;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+//Set default pixel size to 10 for easier rem usage
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+// Global Styles
+
+button,
+label,
+input,
+textarea,
+p {
+  font-size: $text;
+}
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: $headerSmall;
+}
+
+a {
+  text-decoration: none;
+  color: $whiteColor;
+}
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@mixin xl() {
+  font-size: $headerLarge;
+  line-height: 75px;
+  padding-bottom: 30px;
+}
+
+@mixin large() {
+  font-size: $headerMedium;
+  line-height: 46px;
+  padding-bottom: 30px;
+}
+
+@mixin medium() {
+  font-size: $headerSmall;
+  line-height: 20px;
+  padding-bottom: 24px;
+}
+
+@mixin small() {
+  font-size: $text;
+  line-height: 10px;
+  padding-bottom: 16px;
+}
+
+@mixin link-button() {
+  background: $mainGreen;
+  max-width: max-content;
+  padding: 1.75rem 2.25rem;
+  font-size: $headerSmall;
+  color: $whiteColor;
+  border-radius: 10px;
+  text-shadow: 1px 1px 3px #949494;
+}
+
+@import "../components/Header/header";
+@import "../components/HeroHome/HeroHome";
