@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 import Hero from "../components/Hero";
 import GrayBanner from "../components/GrayBanner";
 import TextImage from "../components/TextImage";
-import homepageImage from "../public/assets/images/homepage.jpg";
+import homepageImage from "../public/assets/images/homepage.png";
 
 export default function Home() {
   const heroHome = {
