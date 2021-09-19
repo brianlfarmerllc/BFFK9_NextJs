@@ -1,0 +1,50 @@
+.white-section {
+  @include flex(space-between, center, row);
+  height: 100%;
+  width: 95%;
+  max-width: 1440px;
+  padding: 4rem 2rem;
+  margin: 4rem auto;
+  .text-container {
+    flex: 1;
+    .top-header {
+      @include small();
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: $greyText;
+      font-weight: 800;
+    }
+    .header {
+      max-width: 80%;
+      @include large();
+      font-weight: 800;
+    }
+    .copy {
+      max-width: 80%;
+      @include medium();
+      font-weight: 300;
+    }
+    .link-button {
+      display: block;
+      @include link-button();
+    }
+  }
+  .img-container {
+    height: inherit;
+    flex: 1;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      top: -50px;
+      bottom: -50px;
+      left: -50px;
+      right: 60%;
+      border-radius: 5px;
+      background: $mainPurple;
+    }
+    img {
+      border-radius: 5px;
+    }
+  }
+}

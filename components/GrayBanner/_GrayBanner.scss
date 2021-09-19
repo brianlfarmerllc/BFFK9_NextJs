@@ -1,0 +1,47 @@
+.banner {
+  min-height: 100%;
+  background: $grayBackground;
+  text-align: center;
+  padding: 2rem;
+
+  .banner-title {
+    margin: 1rem;
+    @include medium;
+    text-transform: uppercase;
+    color: $greyText;
+    font-weight: 400;
+  }
+
+  .banner-container {
+    @include flex(space-between, center, row);
+    flex-wrap: wrap;
+    max-width: 1440px;
+    margin: auto;
+    width: 95%;
+  }
+
+  .city {
+    padding: 2rem 2rem;
+    @include large();
+    color: $darkGrayText;
+  }
+
+  .city1 {
+    font-family: "Alfa Slab One", cursive;
+  }
+  .city2 {
+    font-family: "Bebas Neue", cursive;
+  }
+  .city3 {
+    font-family: "Bowlby One", cursive;
+  }
+  .city4 {
+    font-family: "Comfortaa", cursive;
+  }
+  .city5 {
+    font-family: "Rammetto One", cursive;
+  }
+  .city6 {
+    font-family: "Righteous", cursive;
+  }
+}

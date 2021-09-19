@@ -8,7 +8,7 @@ export default function Header() {
       <header id="home" className="main-head">
         <nav>
           <div className="co-name">
-            <Link href="./" passHref>
+            <Link href="/" passHref>
               <a className="logo">
                 <Image width="45px" height="60px" src={logo} alt=" BFF K9 company logo" />
                 <div className="name">Best Foot Forward</div>
@@ -17,27 +17,27 @@ export default function Header() {
           </div>
           <ul className="main-nav">
             <li>
-              <Link href="./" passHref>
+              <Link href="/" passHref>
                 <a> Home </a>
               </Link>
             </li>
             <li>
-              <Link href="./about" passHref>
+              <Link href="/about" passHref>
                 <a> About </a>
               </Link>
             </li>
             <li>
-              <Link href="./programs" passHref>
+              <Link href="/programs" passHref>
                 <a> Programs </a>
               </Link>
             </li>
             <li>
-              <Link href="./contact" passHref>
+              <Link href="/contact" passHref>
                 <a> Contact </a>
               </Link>
             </li>
             <li>
-              <Link href="./social" passHref>
+              <Link href="/social" passHref>
                 <a> Social </a>
               </Link>
             </li>

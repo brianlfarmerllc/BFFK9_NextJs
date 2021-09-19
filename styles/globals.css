@@ -36,10 +36,6 @@ a {
 
 .main-head {
   background: #5e36ca;
-  z-index: 2;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
 }
 
 nav {
@@ -56,10 +52,11 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 90%;
+  width: 95%;
   max-width: 1440px;
   margin: 0 auto;
-  height: 10vh;
+  height: 100%;
+  padding: 2rem;
 }
 
 nav .co-name {
@@ -170,10 +167,10 @@ nav .main-nav {
 }
 
 .hero {
-  width: 100vw;
-  height: 50vh;
+  height: 100%;
   background: #5e36ca;
   text-align: center;
+  padding: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,5 +218,164 @@ nav .main-nav {
   color: #ffffff;
   border-radius: 10px;
   text-shadow: 1px 1px 3px #949494;
+}
+
+.banner {
+  min-height: 100%;
+  background: #f7f7fc;
+  text-align: center;
+  padding: 2rem;
+}
+
+.banner .banner-title {
+  margin: 1rem;
+  font-size: 2.4rem;
+  line-height: 36px;
+  padding-bottom: 24px;
+  text-transform: uppercase;
+  color: #8a8a8a;
+  font-weight: 400;
+}
+
+.banner .banner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1440px;
+  margin: auto;
+  width: 95%;
+}
+
+.banner .city {
+  padding: 2rem 2rem;
+  font-size: 3.6rem;
+  line-height: 46px;
+  padding-bottom: 30px;
+  color: #383838;
+}
+
+.banner .city1 {
+  font-family: "Alfa Slab One", cursive;
+}
+
+.banner .city2 {
+  font-family: "Bebas Neue", cursive;
+}
+
+.banner .city3 {
+  font-family: "Bowlby One", cursive;
+}
+
+.banner .city4 {
+  font-family: "Comfortaa", cursive;
+}
+
+.banner .city5 {
+  font-family: "Rammetto One", cursive;
+}
+
+.banner .city6 {
+  font-family: "Righteous", cursive;
+}
+
+.white-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100%;
+  width: 95%;
+  max-width: 1440px;
+  padding: 4rem 2rem;
+  margin: 4rem auto;
+}
+
+.white-section .text-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.white-section .text-container .top-header {
+  font-size: 1.6rem;
+  line-height: 10px;
+  padding-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #8a8a8a;
+  font-weight: 800;
+}
+
+.white-section .text-container .header {
+  max-width: 80%;
+  font-size: 3.6rem;
+  line-height: 46px;
+  padding-bottom: 30px;
+  font-weight: 800;
+}
+
+.white-section .text-container .copy {
+  max-width: 80%;
+  font-size: 2.4rem;
+  line-height: 36px;
+  padding-bottom: 24px;
+  font-weight: 300;
+}
+
+.white-section .text-container .link-button {
+  display: block;
+  background: #2abaa0;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding: 1.75rem 2.25rem;
+  font-size: 2.4rem;
+  color: #ffffff;
+  border-radius: 10px;
+  text-shadow: 1px 1px 3px #949494;
+}
+
+.white-section .img-container {
+  height: inherit;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+}
+
+.white-section .img-container::before {
+  position: absolute;
+  content: "";
+  top: -50px;
+  bottom: -50px;
+  left: -50px;
+  right: 60%;
+  border-radius: 5px;
+  background: #5e36ca;
+}
+
+.white-section .img-container img {
+  border-radius: 5px;
 }
 /*# sourceMappingURL=globals.css.map */

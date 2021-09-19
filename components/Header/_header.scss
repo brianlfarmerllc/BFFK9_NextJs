@@ -1,18 +1,19 @@
 // header that goes across top of page
 .main-head {
   background: #5e36ca;
-  z-index: 2;
-  position: sticky;
-  top: 0;
+  // z-index: 2;
+  // position: sticky;
+  // top: 0;
 }
 
 // nav including logo and menu
 nav {
   @include flex(space-between, center, row);
-  width: 90%;
+  width: 95%;
   max-width: 1440px;
   margin: 0 auto;
-  height: 10vh;
+  height: 100%;
+  padding: 2rem;
   // company name and logo
   .co-name {
     flex: 2 1 30rem;

@@ -6,6 +6,9 @@ $text: 1.6rem;
 $mainPurple: #5e36ca;
 $mainGreen: #2abaa0;
 $whiteColor: #ffffff;
+$grayBackground: #f7f7fc;
+$greyText: #8a8a8a;
+$darkGrayText: #383838;
 
 * {
   margin: 0px;
@@ -65,7 +68,7 @@ a {
 
 @mixin medium() {
   font-size: $headerSmall;
-  line-height: 20px;
+  line-height: 36px;
   padding-bottom: 24px;
 }
 
@@ -86,4 +89,6 @@ a {
 }
 
 @import "../components/Header/header";
-@import "../components/HeroHome/HeroHome";
+@import "../components/Hero/Hero";
+@import "../components/GrayBanner/GrayBanner";
+@import "../components/TextImage/TextImage";
