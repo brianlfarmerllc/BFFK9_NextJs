@@ -1,0 +1,22 @@
+.white-section {
+  .faq-header {
+    @include large();
+    text-align: center;
+    width: 100%;
+  }
+  .questions {
+    margin-top: 50px;
+    .qa {
+      padding-bottom: 4rem;
+
+      .question {
+        @include medium();
+      }
+
+      .answer {
+        @include medium();
+        font-weight: 300;
+      }
+    }
+  }
+}

@@ -5,7 +5,10 @@ import Layout from "../components/Layout";
 import Hero from "../components/Hero";
 import GrayBanner from "../components/GrayBanner";
 import TextImage from "../components/TextImage";
+import Testimonial from "../components/Testimonial";
+import FAQ from "../components/FAQ";
 import homepageImage from "../public/assets/images/homepage.png";
+import dottie from "../public/assets/images/Dottie.png";
 
 export default function Home() {
   const heroHome = {
@@ -38,6 +41,11 @@ export default function Home() {
     image: <Image src={homepageImage} alt=" BFF K9 company logo" />,
   };
 
+  const testimonial = {
+    image: dottie,
+    copy: "We absolutely loved our experience with Best Foot Forward K9 Training. Not only does our 6 month old pup have a new set of tools for good behavior, but we also feel like we as owners are better equipped to be good dog pawrents. Can't recommend Best Foot Forward enough!",
+  };
+
   return (
     <Layout>
       <Head>
@@ -47,6 +55,8 @@ export default function Home() {
       <Hero hero={heroHome} />
       <GrayBanner banner={bannerHome} />
       <TextImage content={textImage} />
+      <Testimonial content={testimonial} />
+      <FAQ />
     </Layout>
   );
 }

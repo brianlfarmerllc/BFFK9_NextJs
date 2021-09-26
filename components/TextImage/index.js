@@ -1,4 +1,3 @@
-import Image from "next/image";
 import GreenButton from "../GreenButton";
 
 export default function TextImage({ content }) {
