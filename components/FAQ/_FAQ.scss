@@ -1,22 +1,58 @@
 .white-section {
-  .faq-header {
-    @include large();
-    text-align: center;
+  .faq {
     width: 100%;
-  }
-  .questions {
-    margin-top: 50px;
-    .qa {
-      padding-bottom: 4rem;
+    .faq-header {
+      @include large();
+      text-align: center;
+      width: 100%;
+    }
+    .questions {
+      margin-top: 50px;
+      .qa {
+        padding-bottom: 4rem;
+        width: 100%;
+        .question-container {
+          @include flex(space-between, center, row);
 
-      .question {
-        @include medium();
-      }
+          img {
+            cursor: pointer;
+            pointer-events: all;
+            transition: all 1s;
+            transform: rotate(0);
+          }
+          .rotate-arrow {
+            transition: all 1s;
+            transform: rotate(180deg);
+          }
+        }
+        .question {
+          @include medium();
+          padding-bottom: 0px;
+        }
 
-      .answer {
-        @include medium();
-        font-weight: 300;
+        .answer {
+          @include medium();
+          font-weight: 300;
+          padding-top: 24px;
+          transition: all 1s;
+          display: none;
+        }
+
+        .show-answer {
+          display: block;
+          animation: fadeIn 1.5s, ease-in-out forwards;
+        }
       }
     }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
