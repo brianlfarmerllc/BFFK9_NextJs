@@ -1,7 +1,7 @@
 .banner {
   min-height: 100%;
   background: $grayBackground;
-  text-align: center;
+
   padding: 2rem;
 
   .banner-title {
@@ -10,14 +10,23 @@
     text-transform: uppercase;
     color: $greyText;
     font-weight: 400;
+    text-align: center;
   }
 
   .banner-container {
-    @include flex(space-between, center, row);
-    flex-wrap: wrap;
     max-width: 1440px;
     margin: auto;
     width: 95%;
+  }
+
+  .banner-cities {
+    @include flex(space-between, center, row);
+    flex-wrap: wrap;
+  }
+
+  .banner-items {
+    @include flex(space-between, center, row);
+    flex-wrap: wrap;
   }
 
   .city {
@@ -42,6 +51,31 @@
     font-family: "Rammetto One", cursive;
   }
   .city6 {
+    font-family: "Righteous", cursive;
+  }
+
+  .item {
+    padding: 2rem 2rem;
+    @include large();
+    color: $darkGrayText;
+  }
+
+  .item1 {
+    font-family: "Alfa Slab One", cursive;
+  }
+  .item2 {
+    font-family: "Bebas Neue", cursive;
+  }
+  .item3 {
+    font-family: "Bowlby One", cursive;
+  }
+  .item4 {
+    font-family: "Comfortaa", cursive;
+  }
+  .item5 {
+    font-family: "Rammetto One", cursive;
+  }
+  .item6 {
     font-family: "Righteous", cursive;
   }
 }

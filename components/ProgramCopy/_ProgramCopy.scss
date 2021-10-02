@@ -1,0 +1,28 @@
+.copy-container {
+  max-width: 1440px;
+  margin: 4rem auto 1.6rem auto;
+  padding: 2rem 0;
+  display: flow-root;
+  .copy-text {
+    margin: auto;
+    width: 95%;
+
+    .copy-price {
+      @include small();
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: $greyText;
+      font-weight: 800;
+    }
+
+    .copy-header {
+      max-width: 80%;
+      @include large();
+      font-weight: 800;
+    }
+    .program-copy {
+      @include medium();
+      font-weight: 300;
+    }
+  }
+}

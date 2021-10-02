@@ -1,16 +1,12 @@
 import Head from "next/head";
 import Header from "../Header";
+import Footer from "../Footer";
 
 export default function Layout({ children }) {
   return (
     <>
       <Head>
         <link rel="icon" href="/assets/icons/favicon.png" />
-        <meta
-          name="description"
-          content="Frontend Mentor galleria slideshow site built with NextJs"
-        />
-        <meta name="title" content="BFFK9 | Wylie Texas Dog Training" />
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"></link>
         <link
@@ -23,8 +19,8 @@ export default function Layout({ children }) {
         ></link>
       </Head>
       <Header />
-
       <main className="mainView">{children}</main>
+      <Footer />
     </>
   );
 }

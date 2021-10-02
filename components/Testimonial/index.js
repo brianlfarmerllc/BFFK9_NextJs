@@ -5,9 +5,7 @@ export default function Testimonial({ content }) {
     <section className="testimonial-section">
       {/* <h2 className="header">Client Testimonial</h2> */}
       <div className="testimonial">
-        <div className="img-container">
-          <Image src={content.image}></Image>
-        </div>
+        <div className="img-container">{content.image}</div>
         <div className="text-container">
           <h3 className="testimonial-copy">
             <span className="quote open-quote"></span>

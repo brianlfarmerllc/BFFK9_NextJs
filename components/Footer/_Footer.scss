@@ -1,0 +1,38 @@
+// header that goes across top of page
+.main-footer {
+  background: #5e36ca;
+  .footer-nav {
+    @include flex(center, center, row);
+    width: 95%;
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 2rem;
+  }
+  .copyright {
+    text-align: center;
+    width: 100%;
+    font-size: 1.8rem;
+    color: white;
+    font-weight: normal;
+  }
+}
+
+// animations
+@keyframes underline {
+  from {
+    right: 100%;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
