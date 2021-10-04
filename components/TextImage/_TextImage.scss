@@ -8,21 +8,15 @@
   .text-container {
     flex: 1;
     .top-header {
-      @include small();
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      color: $greyText;
-      font-weight: 800;
+      @include smallHeader();
     }
     .header {
       max-width: 80%;
-      @include large();
-      font-weight: 800;
+      @include largeHeader();
     }
     .copy {
       max-width: 80%;
-      @include medium();
-      font-weight: 300;
+      @include largeText();
     }
     .link-button {
       display: block;

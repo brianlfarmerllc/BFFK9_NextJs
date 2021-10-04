@@ -17,6 +17,12 @@ export default function Layout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Bowlby+One&family=Comfortaa:wght@700&family=Rammetto+One&family=Righteous&display=swap"
           rel="stylesheet"
         ></link>
+
+        {/* test font */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Amita&family=Berkshire+Swash&family=Caveat+Brush&family=Damion&family=Dokdo&family=Dr+Sugiyama&family=Eagle+Lake&family=Gochi+Hand&family=Mansalva&family=Marck+Script&family=Merienda+One&family=Molle:ital@1&family=Mr+Dafoe&family=Nerko+One&family=Rancho&family=Redressed&family=Schoolbell&family=Sedgwick+Ave&family=Sedgwick+Ave+Display&family=Sriracha&display=swap"
+          rel="stylesheet"
+        ></link>
       </Head>
       <Header />
       <main className="mainView">{children}</main>

@@ -41,7 +41,7 @@ export default function Programs() {
 
   const testimonial2 = {
     image: <Image src={archie} alt="photo of dog"></Image>,
-    copy: "I am blown away at how much he has learned in the past two weeks. Amy is an excellent trainer and I would not have wanted to take Archie anywhere else! Not only is your pup being set up for success, so are you. Amy really takes the time after training to follow up and teach you what your pup has been taught through out their stay with her. I love the experience I had with Amy and so did Archie!",
+    copy: "I am blown away at how much he has learned in the past two weeks. Amy is an excellent trainer, and I would not have wanted to take Archie anywhere else! Not only is your pup being set up for success, so are you. Amy really takes the time after training to follow up and teach you what your pup has been taught throughout their stay with her. I love the experience I had with Amy and so did Archie!",
   };
 
   return (
@@ -55,8 +55,8 @@ export default function Programs() {
       </Head>
       <Hero hero={heroPrograms} />
       <GrayBanner banner={bannerPrograms} />
-      <Program />
       <Testimonial content={testimonial} />
+      <Program />
       <TextImage content={textImage} />
       <Testimonial content={testimonial2} />
       <FAQ />

@@ -2,7 +2,7 @@
   .faq {
     width: 100%;
     .faq-header {
-      @include large();
+      @include largeHeader();
       text-align: center;
       width: 100%;
     }
@@ -26,13 +26,13 @@
           }
         }
         .question {
-          @include medium();
+          @include mediumHeader();
+          font-weight: 600;
           padding-bottom: 0px;
         }
 
         .answer {
-          @include medium();
-          font-weight: 300;
+          @include largeText();
           padding-top: 24px;
           transition: all 1s;
           display: none;

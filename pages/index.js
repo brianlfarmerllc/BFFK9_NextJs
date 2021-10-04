@@ -26,9 +26,9 @@ export default function Home() {
   const textImage = {
     topHeader: "My Approach",
     header: "Does your dogs behavior have you at your wits end?",
-    copy: "Dont worry there is hope. My permission based training techniques bring harmony to my clients who practice them consistently.",
+    copy: "Don’t worry there is hope. My permission-based training techniques bring harmony to my clients who practice them consistently.",
     copy2:
-      "My approach to dog training is geared towards addressing your dogs state of mind with a goal of creating a happy and balanced relationship between you and your dog.",
+      "My approach to dog training is geared towards addressing your dog’s state of mind with a goal of creating a happy and balanced relationship between you and your dog.",
     image: <Image src={homepageImage} alt=" BFF K9 company logo" />,
     button: true,
     buttonText: "Learn More",

@@ -28,9 +28,9 @@ export default function About() {
   const textImage = {
     topHeader: "Why I do it",
     header: "Working to stop the cycle.",
-    copy: "I started volunteering with a local rescue in 2012 and have been serving on the board of directors for the past three years. Rescue is my true passion but it can also be heartbreaking.",
+    copy: "I started volunteering with a local rescue in 2012 and have been serving on the board of directors for the past three years. Rescue is my true passion, but it can also be heartbreaking.",
     copy2:
-      "Time and time again, I see great dogs surrendered to shelters because of simple behavioral issues. When I can help a pet owner overcome these issues by introducing them to my balanced training methods before they reach that breaking point, it means the world to me. If you are struggling with behaviour issues, dont wory there is help.",
+      "Time and time again, I see great dogs surrendered to shelters because of simple behavioral issues. When I can help a pet owner overcome these issues by introducing them to my balanced training methods before they reach that breaking point, it means the world to me. If you are struggling with behavior issues, don’t worry there is help.",
     image: <Image src={aboutImage} alt=" BFF K9 company logo" />,
     button: true,
     buttonText: "Start Today",
@@ -39,7 +39,7 @@ export default function About() {
 
   const testimonial = {
     image: <Image src={archie} alt="photo of dog"></Image>,
-    copy: "I am blown away at how much he has learned in the past two weeks. Amy is an excellent trainer and I would not have wanted to take Archie anywhere else! Not only is your pup being set up for success, so are you. Amy really takes the time after training to follow up and teach you what your pup has been taught through out their stay with her. I love the experience I had with Amy and so did Archie!",
+    copy: "I am blown away at how much he has learned in the past two weeks. Amy is an excellent trainer, and I would not have wanted to take Archie anywhere else! Not only is your pup being set up for success, so are you. Amy really takes the time after training to follow up and teach you what your pup has been taught throughout their stay with her. I love the experience I had with Amy and so did Archie!",
   };
 
   return (

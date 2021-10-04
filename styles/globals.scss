@@ -1,8 +1,13 @@
+// Header Sizes
 $headerXL: 6.5rem;
-$headerLarge: 4.8rem;
-$headerMedium: 3.6rem;
-$headerSmall: 2.4rem;
-$text: 1.8rem;
+$headerLarge: 4rem;
+$headerMedium: 2.4rem;
+$headerSmall: 1.8rem;
+// Copy Sizes
+$textXL: 3.6rem;
+$textLarge: 2.4rem;
+$textMedium: 2.1rem;
+$textSmall: 1.8rem;
 
 $mainPurple: #5e36ca;
 $mainGreen: #2abaa0;
@@ -33,14 +38,14 @@ label,
 input,
 textarea,
 p {
-  font-size: $text;
+  font-size: $textSmall;
 }
 ul {
   list-style: none;
 }
 
 li {
-  font-size: $headerSmall;
+  font-size: $headerMedium;
 }
 
 a {
@@ -55,37 +60,64 @@ a {
   flex-direction: $direction;
 }
 
-@mixin xl() {
+// Header Helper
+@mixin xlHeader() {
   font-size: $headerXL;
-  line-height: 75px;
+  font-weight: 800;
+  line-height: 115%;
   padding-bottom: 30px;
+  color: $whiteColor;
 }
 
-@mixin large() {
-  font-size: $headerMedium;
+@mixin largeHeader() {
+  font-size: $headerLarge;
+  font-weight: 800;
   line-height: 46px;
   padding-bottom: 30px;
   color: $darkGrayText;
 }
 
-@mixin medium() {
+@mixin mediumHeader() {
+  font-size: $headerMedium;
+  line-height: 36px;
+  padding-bottom: 24px;
+  text-transform: uppercase;
+  color: $greyText;
+  font-weight: 400;
+}
+
+@mixin smallHeader() {
   font-size: $headerSmall;
+  line-height: 28px;
+  padding-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: $greyText;
+  font-weight: 800;
+}
+
+// Copy Helper
+@mixin xlText() {
+  font-size: $textXL;
+  font-weight: 200;
+  line-height: 46px;
+  padding-bottom: 30px;
+  color: $whiteColor;
+}
+
+@mixin largeText() {
+  font-size: $textLarge;
+  font-weight: 300;
   line-height: 36px;
   padding-bottom: 24px;
   color: $darkGrayText;
-}
-
-@mixin small() {
-  font-size: $text;
-  line-height: 28px;
-  padding-bottom: 16px;
 }
 
 @mixin link-button() {
   background: $mainGreen;
   max-width: max-content;
   padding: 1.75rem 2.25rem;
-  font-size: $headerSmall;
+  font-size: $headerMedium;
   color: $whiteColor;
   border-radius: 10px;
   text-shadow: 1px 1px 3px #949494;

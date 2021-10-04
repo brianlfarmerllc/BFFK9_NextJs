@@ -6,10 +6,8 @@
 
   .banner-title {
     margin: 1rem;
-    @include medium;
-    text-transform: uppercase;
-    color: $greyText;
-    font-weight: 400;
+    padding-top: 1rem;
+    @include mediumHeader;
     text-align: center;
   }
 
@@ -29,34 +27,12 @@
     flex-wrap: wrap;
   }
 
-  .city {
-    padding: 2rem 2rem;
-    @include large();
-    color: $darkGrayText;
-  }
-
-  .city1 {
-    font-family: "Alfa Slab One", cursive;
-  }
-  .city2 {
-    font-family: "Bebas Neue", cursive;
-  }
-  .city3 {
-    font-family: "Bowlby One", cursive;
-  }
-  .city4 {
-    font-family: "Comfortaa", cursive;
-  }
-  .city5 {
-    font-family: "Rammetto One", cursive;
-  }
-  .city6 {
-    font-family: "Righteous", cursive;
-  }
-
   .item {
+    font-size: 3.6rem;
     padding: 2rem 2rem;
-    @include large();
+    font-weight: 800;
+    line-height: 46px;
+    padding-bottom: 30px;
     color: $darkGrayText;
   }
 

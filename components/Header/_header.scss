@@ -28,9 +28,25 @@ nav {
     .name {
       margin-left: 1rem;
       color: white;
-      font-size: 3.6rem;
-      font-family: "Pacifico", cursive;
-      letter-spacing: 1px;
+      // font-size: 3.6rem;
+      // font-family: "Pacifico", cursive;
+
+      // font-family: "Caveat Brush", cursive; // like it
+      // font-family: "Damion", cursive; // like it
+
+      // font-family: "Dr Sugiyama", cursive; // like it
+
+      // font-family: "Merienda One", cursive; // like it
+      // font-family: "Molle", cursive; // like it
+
+      // font-family: "Nerko One", cursive; // like it
+
+      // font-family: "Sedgwick Ave", cursive; // like it
+
+      font-family: "Sriracha", cursive; // like it
+
+      font-size: 4rem;
+      // letter-spacing: 1px;
       position: relative;
       &::after {
         position: absolute;

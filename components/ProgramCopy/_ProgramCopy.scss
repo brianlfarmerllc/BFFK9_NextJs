@@ -8,21 +8,15 @@
     width: 95%;
 
     .copy-price {
-      @include small();
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      color: $greyText;
-      font-weight: 800;
+      @include smallHeader();
     }
 
     .copy-header {
       max-width: 80%;
-      @include large();
-      font-weight: 800;
+      @include largeHeader();
     }
     .program-copy {
-      @include medium();
-      font-weight: 300;
+      @include largeText();
     }
   }
 }
